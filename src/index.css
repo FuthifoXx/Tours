@@ -222,21 +222,7 @@ ul {
   text-transform: capitalize;
 }
 /* alert */
-@keyframes spinner {
-  to {
-    transform: rotate(360deg);
-  }
-}
 
-.loading {
-  width: 6rem;
-  height: 6rem;
-  border: 5px solid var(--grey-400);
-  border-radius: 50%;
-  margin: 0 auto;
-  border-top-color: var(--primary-500);
-  animation: spinner 0.3s linear infinite;
-}
 /* title */
 
 .title {
@@ -251,6 +237,22 @@ ul {
   margin-top: 1rem;
 }
 /* ============= PROJECT CSS =============== */
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  width: 6rem;
+  height: 6rem;
+  border: 5px solid var(--grey-400);
+  border-radius: 50%;
+  border-top-color: var(--primary-500);
+  margin: 0 auto;
+  animation: spinner 0.3s linear infinite;
+}
 
 main {
   width: 90vw;
@@ -283,9 +285,10 @@ main {
   padding: 0.5rem;
   color: var(--white);
   letter-spacing: var(--letterSpacing);
-  background: var(--primary-500);
+  background-color: var(--primary-500);
   border-top-right-radius: var(--borderRadius);
 }
+
 .single-tour .img {
   height: 20rem;
   border-top-right-radius: var(--borderRadius);
@@ -302,11 +305,13 @@ main {
   font-weight: 500;
   line-height: 1.5;
 }
+
 .tour-info p {
   margin-bottom: 1.25rem;
   line-height: 1.5;
   color: var(--grey-500);
 }
+
 .info-btn,
 .delete-btn {
   background: transparent;
@@ -314,6 +319,7 @@ main {
   text-transform: capitalize;
   cursor: pointer;
 }
+
 .info-btn {
   color: var(--primary-500);
   font-weight: 600;
@@ -323,6 +329,7 @@ main {
   border: 1px solid var(--primary-500);
   color: var(--primary-500);
 }
+
 .delete-btn:hover {
   background: var(--primary-500);
   color: var(--white);
@@ -334,6 +341,7 @@ main {
     align-items: start;
   }
 }
+
 @media screen and (min-width: 992px) {
   .tours {
     grid-template-columns: 1fr 1fr 1fr;
